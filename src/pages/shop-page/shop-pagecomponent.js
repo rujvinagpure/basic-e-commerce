@@ -5,7 +5,7 @@ import './shop-page.styles.css';
 const ShopPage = ()=>{
     return(
 
-        <div className="shoppage">
+        <div className="shop-page">
             <p>
                 this is shoppage
             </p>
