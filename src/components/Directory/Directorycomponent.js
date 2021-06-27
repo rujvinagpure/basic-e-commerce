@@ -53,3 +53,4 @@ this.state.sections.map(
 } 
 
 export default Directory;
+//spreadoperator : ...otherSectionProps
