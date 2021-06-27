@@ -1,5 +1,5 @@
 import React from 'react';
-//import './directory.styles.css';
+import './Directory.styles.scss';
 import MenuItem from '../menu-item/menu-itemcomponent';
 class Directory extends React.Component{
 
@@ -35,7 +35,7 @@ class Directory extends React.Component{
     render(){
 
         return(
-<div className="directory">
+<div className="directory-menu">
 {
 this.state.sections.map(
 ({id,...otherSectionProps})=> ( 
