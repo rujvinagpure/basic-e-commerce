@@ -30,13 +30,13 @@ class Directory extends React.Component{
                 {
                     title:'fruits',
                     imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg',
-                    id:2,
+                    id:4,
                     linkUrl:'fruits'
                 },
                 {
                     title:'fruits',
                     imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg',
-                    id:2,
+                    id:5,
                     linkUrl:'fruits'
                 }
             ],
