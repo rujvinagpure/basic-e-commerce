@@ -8,46 +8,28 @@ class Directory extends React.Component{
         super(props);
 
         this.state ={
-            sections : [
-                {
-                    title:'Veggies',
-                    imageUrl: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/powerhouse_vegetables_slideshow/650x350_powerhouse_vegetables_slideshow.jpg',
-                    id:1,
-                    linkUrl:'veggies'
-                },
-                {
-                    title:'fruits',
-                    imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg',
-                    id:2,
-                    linkUrl:'fruits'
-                },
-                {
-                    title:'dairy',
-                    imageUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENgm8iHViJY7igbBelx7Ps61fkhUpL--z_E024mWFUF18p_p5kVqW-Td_0gQjp9vrGuE&usqp=CAU',
-                    id:3,
-                    linkUrl:'dairy'
-                },
-                {
-                    title:'fruits',
-                    imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg',
-                    id:4,
-                    linkUrl:'fruits'
-                },
-                {
-                    title:'fruits',
-                    imageUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg',
-                    id:5,
-                    linkUrl:'fruits'
-                },
-                {
-                    title:'products',
-                    imageUrl:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQENgm8iHViJY7igbBelx7Ps61fkhUpL--z_E024mWFUF18p_p5kVqW-Td_0gQjp9vrGuE&usqp=CAU',
-                    id:6,
-                    linkUrl:'random'
-                }
-            ],
+            sections : []
+              
             
-        }
+        };
+       
+    }
+    //should be out of constructor and render
+        componentDidMount(){
+            //gets triggered when the comp is loaded
+       //call an API when 
+       //making call with fetch API of javascript
+       fetch(`https://fakestoreapi.com/products`)
+       .then(res => res.json())
+       .then(response => 
+        this.setState({sections:response})
+            )
+.catch(error => console.log(error))
+//asynchronus calling (promises)
+       //address and payload , two parameteres
+
+console.log(this.state.sections);
+        
     }
 
     render(){
