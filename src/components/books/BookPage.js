@@ -1,6 +1,7 @@
 import { ReactComponent } from 'react';
 import React from 'react';
 //HOC of react-redux library
+//connects ui with store
 import {connect} from 'react-redux';
 import * as bookActions from '../../actions/bookActions.js'
 
@@ -50,7 +51,7 @@ class Book extends React.Component{
 
 
 }
-
+//ftn note
 const mapStateToProps = (state,props) => {
     return {
         books:state.books
@@ -62,5 +63,5 @@ const mapDispatchToProps = (dispatch) => {
         createBook: book => dispatch(bookActions.createBook(book))
     }
 }
-
+//these 2 are default ftns // with connect
 export default connect(mapStateToProps,mapDispatchToProps)(Book);
